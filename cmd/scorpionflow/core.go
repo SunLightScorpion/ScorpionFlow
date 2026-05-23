@@ -1,15 +1,18 @@
 package main
 
 import (
-	"ScorpionFlow/intern/runtime"
-	"fmt"
+	"fyne.io/fyne/v2"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/widget"
 )
 
 func main() {
 
-	fmt.Println("Hello World")
+	a := app.New()
+	w := a.NewWindow("ScorpionFlow")
 
-	var app = runtime.NewApp()
-	app.Test()
-
+	w.CenterOnScreen()
+	w.Resize(fyne.NewSize(800, 600))
+	w.SetContent(widget.NewLabel("Hallo Welt"))
+	w.ShowAndRun()
 }
