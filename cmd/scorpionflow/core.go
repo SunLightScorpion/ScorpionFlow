@@ -1,9 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"ScorpionFlow/intern/runtime"
+	"fmt"
+)
 
 func main() {
 
 	fmt.Println("Hello World")
+
+	var app = runtime.NewApp()
+	app.Test()
 
 }
