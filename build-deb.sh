@@ -27,7 +27,7 @@ Version: $VERSION
 Section: utils
 Priority: optional
 Architecture: $ARCH
-Maintainer: Lukas
+Maintainer: NightDev701
 Description: ScorpionFlow - Linux system automation tool
 EOF
 
