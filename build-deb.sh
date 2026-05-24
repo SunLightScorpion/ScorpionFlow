@@ -3,7 +3,7 @@
 set -e
 
 APP_NAME="scorpionflow"
-VERSION="0.1.3"
+VERSION="0.1.4"
 ARCH="amd64"
 
 BUILD_DIR="dist"
