@@ -3,7 +3,7 @@
 set -e
 
 APP_NAME="scorpionflow"
-VERSION="0.1.4"
+VERSION="0.1.5"
 ARCH="amd64"
 
 BUILD_DIR="dist"
@@ -47,8 +47,8 @@ Type=Application
 Categories=Utility;
 EOF
 
-echo "📦 (optional) icon placeholder..."
-# cp assets/icon.png $PKG_DIR/usr/share/icons/hicolor/256x256/apps/scorpionflow.png
+echo "📦 Installing icon..."
+cp cmd/scorpionflow/assets/icon.png $PKG_DIR/usr/share/icons/hicolor/256x256/apps/scorpionflow.png
 
 echo "🧱 Building .deb..."
 dpkg-deb --build $PKG_DIR $BUILD_DIR/${APP_NAME}_${VERSION}_${ARCH}.deb
